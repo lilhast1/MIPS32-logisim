@@ -10,6 +10,7 @@ slt			|	R		|	0x0		|	0x2A
 sll			|	R		|	0x0		|	0x00
 srl			|	R		|	0x0		|	0x02
 sub			|	R		|	0x0		|	0x22
+sra			|	R		|	0x0		|	0x03
 ================================================
 jal			|	J		|	0x03	|	?
 j			|	J		|	0x02	|	?
@@ -19,7 +20,7 @@ andi		|	I		|	0x0C	|	?
 beq			|	I		|	0x04	|	?
 bne			|	I		|	0x05	|	?
 lb			|	I		|	0x20	|	?
-lui			|	I		|	0x0F	|	?
+lui			|	I		|	0x0F	|	11
 lw			|	I		|	0x23	|	?
 ori			|	I		|	0x0D	|	?
 sb			|	I		|	0x28	|	?

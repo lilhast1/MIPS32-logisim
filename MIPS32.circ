@@ -849,6 +849,10 @@
       <a name="label" val="Operand2"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(470,1000)" name="Constant">
+      <a name="value" val="0xf"/>
+      <a name="width" val="5"/>
+    </comp>
     <comp lib="0" loc="(550,640)" name="Tunnel">
       <a name="label" val="allpass"/>
       <a name="width" val="32"/>
@@ -863,6 +867,10 @@
     </comp>
     <comp lib="0" loc="(590,220)" name="Tunnel">
       <a name="label" val="logright"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(590,260)" name="Tunnel">
+      <a name="label" val="aright"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(600,500)" name="Tunnel">
@@ -888,6 +896,10 @@
       <a name="bit4" val="0"/>
       <a name="bit5" val="1"/>
       <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="0" loc="(630,970)" name="Tunnel">
+      <a name="label" val="lui"/>
+      <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(650,560)" name="Tunnel">
       <a name="label" val="bor"/>
@@ -933,6 +945,16 @@
     <comp lib="0" loc="(800,250)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="logright"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(820,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="lui"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(830,260)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="aright"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(830,700)" name="Tunnel">
@@ -1023,7 +1045,9 @@
       <a name="width" val="32"/>
     </comp>
     <comp lib="3" loc="(530,1080)" name="Shifter"/>
-    <comp lib="3" loc="(530,990)" name="Shifter"/>
+    <comp lib="3" loc="(530,990)" name="Shifter">
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="3" loc="(590,180)" name="Shifter">
       <a name="width" val="32"/>
     </comp>
@@ -1053,7 +1077,9 @@
       <a name="width" val="32"/>
     </comp>
     <comp lib="3" loc="(600,1060)" name="Adder"/>
-    <comp lib="3" loc="(600,970)" name="Adder"/>
+    <comp lib="3" loc="(600,970)" name="Adder">
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="8" loc="(305,735)" name="Text">
       <a name="text" val="velicina?"/>
     </comp>
@@ -1127,7 +1153,9 @@
     <wire from="(390,700)" to="(540,700)"/>
     <wire from="(390,790)" to="(390,850)"/>
     <wire from="(390,790)" to="(550,790)"/>
+    <wire from="(390,850)" to="(390,960)"/>
     <wire from="(390,850)" to="(550,850)"/>
+    <wire from="(390,960)" to="(560,960)"/>
     <wire from="(460,400)" to="(460,450)"/>
     <wire from="(460,400)" to="(550,400)"/>
     <wire from="(460,450)" to="(460,520)"/>
@@ -1138,7 +1166,10 @@
     <wire from="(460,580)" to="(550,580)"/>
     <wire from="(460,740)" to="(460,860)"/>
     <wire from="(460,740)" to="(540,740)"/>
+    <wire from="(460,860)" to="(460,980)"/>
     <wire from="(460,860)" to="(550,860)"/>
+    <wire from="(460,980)" to="(490,980)"/>
+    <wire from="(470,1000)" to="(490,1000)"/>
     <wire from="(500,190)" to="(500,230)"/>
     <wire from="(500,190)" to="(550,190)"/>
     <wire from="(500,230)" to="(500,270)"/>
@@ -1151,9 +1182,12 @@
     <wire from="(510,610)" to="(510,640)"/>
     <wire from="(510,610)" to="(550,610)"/>
     <wire from="(510,640)" to="(550,640)"/>
+    <wire from="(530,980)" to="(530,990)"/>
+    <wire from="(530,980)" to="(560,980)"/>
     <wire from="(590,390)" to="(610,390)"/>
     <wire from="(590,440)" to="(610,440)"/>
     <wire from="(600,560)" to="(620,560)"/>
+    <wire from="(600,970)" to="(630,970)"/>
     <wire from="(620,560)" to="(620,590)"/>
     <wire from="(620,560)" to="(650,560)"/>
     <wire from="(620,590)" to="(630,590)"/>
@@ -1170,6 +1204,8 @@
     <wire from="(800,250)" to="(850,250)"/>
     <wire from="(810,650)" to="(810,660)"/>
     <wire from="(810,650)" to="(850,650)"/>
+    <wire from="(820,400)" to="(850,400)"/>
+    <wire from="(830,260)" to="(850,260)"/>
     <wire from="(830,700)" to="(850,700)"/>
     <wire from="(840,600)" to="(850,600)"/>
     <wire from="(840,640)" to="(850,640)"/>
@@ -1643,7 +1679,9 @@
       <a name="addrWidth" val="6"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 6 6
-0
+3f 0 0 0 22 22 0 0
+20 0 2a 0 24 25 0 11
+16*0 20 7*0 20 0 0 20
 </a>
       <a name="dataWidth" val="6"/>
     </comp>
