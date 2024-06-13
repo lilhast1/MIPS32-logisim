@@ -3898,22 +3898,78 @@
     <a name="circuit" val="mips32"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1000,1200)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EMreW"/>
+    </comp>
+    <comp lib="0" loc="(1000,710)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="ForwardB"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1050,1140)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MWrd"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(1080,550)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="ForwardA"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1110,1120)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="EMrd"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(1130,1220)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MWregW"/>
+    </comp>
+    <comp lib="0" loc="(1440,1190)" name="Tunnel">
+      <a name="label" val="ForwardB"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1470,1120)" name="Tunnel">
+      <a name="label" val="ForwardA"/>
+      <a name="width" val="2"/>
+    </comp>
     <comp lib="0" loc="(1840,1000)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="label" val="EMrd"/>
+      <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(1840,1040)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="label" val="EMreW"/>
     </comp>
     <comp lib="0" loc="(1840,950)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="label" val="f10"/>
+      <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(2790,670)" name="Tunnel">
+    <comp lib="0" loc="(2790,740)" name="Tunnel">
       <a name="facing" val="north"/>
+      <a name="label" val="MWregW"/>
     </comp>
-    <comp lib="0" loc="(2820,670)" name="Tunnel">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(2860,650)" name="Tunnel">
+      <a name="label" val="MWrd"/>
+      <a name="width" val="5"/>
     </comp>
-    <comp lib="0" loc="(3010,570)" name="Tunnel"/>
+    <comp lib="0" loc="(3010,570)" name="Tunnel">
+      <a name="label" val="f01"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(750,530)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="f10"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(790,490)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="f01"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="2" loc="(1020,660)" name="Multiplexer">
       <a name="select" val="2"/>
       <a name="width" val="32"/>
@@ -3931,14 +3987,14 @@
     <comp lib="8" loc="(1080,465)" name="Text">
       <a name="text" val="MuxA"/>
     </comp>
-    <comp lib="8" loc="(1732,631)" name="Text">
+    <comp lib="8" loc="(1730,630)" name="Text">
       <a name="font" val="SansSerif bold 11"/>
       <a name="text" val="iz op2"/>
     </comp>
-    <comp lib="8" loc="(2080,596)" name="Text">
+    <comp lib="8" loc="(2080,595)" name="Text">
       <a name="text" val="ovo je iz alu"/>
     </comp>
-    <comp lib="8" loc="(995,629)" name="Text">
+    <comp lib="8" loc="(995,625)" name="Text">
       <a name="text" val="MuxB"/>
     </comp>
     <comp loc="(1110,920)" name="ALUControl"/>
@@ -3948,20 +4004,29 @@
     <comp loc="(2430,580)" name="Data"/>
     <comp loc="(2700,560)" name="MEM2WB"/>
     <comp loc="(630,640)" name="ID2EX"/>
+    <wire from="(1000,1200)" to="(1160,1200)"/>
+    <wire from="(1000,680)" to="(1000,710)"/>
     <wire from="(1020,660)" to="(1070,660)"/>
+    <wire from="(1050,1140)" to="(1160,1140)"/>
+    <wire from="(1080,520)" to="(1080,550)"/>
     <wire from="(1100,500)" to="(1280,500)"/>
     <wire from="(1100,670)" to="(1130,670)"/>
+    <wire from="(1110,1120)" to="(1160,1120)"/>
+    <wire from="(1130,1220)" to="(1160,1220)"/>
     <wire from="(1130,570)" to="(1130,670)"/>
     <wire from="(1130,570)" to="(1280,570)"/>
     <wire from="(1130,670)" to="(1300,670)"/>
     <wire from="(1280,500)" to="(1280,550)"/>
     <wire from="(1300,630)" to="(1300,670)"/>
     <wire from="(1300,630)" to="(1710,630)"/>
+    <wire from="(1380,1120)" to="(1470,1120)"/>
+    <wire from="(1380,1140)" to="(1380,1190)"/>
+    <wire from="(1380,1190)" to="(1440,1190)"/>
     <wire from="(1710,620)" to="(1710,630)"/>
     <wire from="(1710,620)" to="(1800,620)"/>
-    <wire from="(1870,1000)" to="(2030,1000)"/>
-    <wire from="(1870,1040)" to="(1990,1040)"/>
-    <wire from="(1870,950)" to="(2000,950)"/>
+    <wire from="(1840,1000)" to="(2030,1000)"/>
+    <wire from="(1840,1040)" to="(1990,1040)"/>
+    <wire from="(1840,950)" to="(2000,950)"/>
     <wire from="(1970,600)" to="(2000,600)"/>
     <wire from="(1970,610)" to="(2070,610)"/>
     <wire from="(1970,640)" to="(2030,640)"/>
@@ -4001,11 +4066,21 @@
     <wire from="(2700,580)" to="(2820,580)"/>
     <wire from="(2700,590)" to="(2790,590)"/>
     <wire from="(2700,600)" to="(2890,600)"/>
-    <wire from="(2790,590)" to="(2790,650)"/>
+    <wire from="(2790,590)" to="(2790,740)"/>
     <wire from="(2820,580)" to="(2820,650)"/>
+    <wire from="(2820,650)" to="(2860,650)"/>
     <wire from="(2860,570)" to="(2860,580)"/>
     <wire from="(2860,580)" to="(2880,580)"/>
     <wire from="(2890,590)" to="(2890,600)"/>
-    <wire from="(2910,570)" to="(2970,570)"/>
+    <wire from="(2910,570)" to="(3010,570)"/>
+    <wire from="(750,530)" to="(770,530)"/>
+    <wire from="(770,530)" to="(770,660)"/>
+    <wire from="(770,530)" to="(810,530)"/>
+    <wire from="(770,660)" to="(980,660)"/>
+    <wire from="(790,490)" to="(1060,490)"/>
+    <wire from="(790,490)" to="(790,650)"/>
+    <wire from="(790,650)" to="(980,650)"/>
+    <wire from="(810,500)" to="(1060,500)"/>
+    <wire from="(810,500)" to="(810,530)"/>
   </circuit>
 </project>
