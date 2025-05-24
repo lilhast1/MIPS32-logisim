@@ -20,9 +20,11 @@ andi		|	I		|	0x0C	|	?
 beq			|	I		|	0x04	|	?
 bne			|	I		|	0x05	|	?
 lb			|	I		|	0x20	|	?
-lui			|	I		|	0x0F	|	11
+lui			|	I		|	0x0F	|	0x11
 lw			|	I		|	0x23	|	?
 ori			|	I		|	0x0D	|	?
 sb			|	I		|	0x28	|	?
 slti		|	I		|	0x0A	|	?
 sw			|	I		|	0x2B	|	?
+
+rezervisano: 0x3f
