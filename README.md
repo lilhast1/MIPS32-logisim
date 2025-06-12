@@ -1,1 +1,1 @@
-u main je stara verzija ne znam kako da uradim glupi MERGE ove dvije grane
+Implemented a large part of MIPS32 CPU in Logisim
